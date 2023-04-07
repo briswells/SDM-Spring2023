@@ -29,12 +29,20 @@ With a subsection for each sprint (i.e. `## Sprint 1`) during the semester, crea
 
 ## Sprint 1
 
-* Created schema for scalable database in 3NF
-* Created models for schema using sequelize
-* Containerized Postgres and PSadmin
-* Converted several of the previous routes to work with new DB
-* Updated local passport stratagy
-* Communicated between teams and performed code reviews
+* [Created schema for scalable database in 3NF](https://github.com/ChicoState/PantryNode/commit/0813c50a91f1f0e921bf322530025e953053d432)
+* [Created models for schema using sequelize](https://github.com/ChicoState/PantryNode/commit/464b440f6ed984e8f89c26dd15744a176d31b304)
+* [Containerized Postgres and PSadmin](https://github.com/ChicoState/PantryNode/commit/cb5f892bd817c6bd290f497af3ea408396da99e4)
+* Converted several of the previous routes to work with new DB [1](https://github.com/ChicoState/PantryNode/commit/250c320d0e1fcb694962957b908e86e36b389ca4)  [2](https://github.com/ChicoState/PantryNode/commits/main?before=1ff8f3f3c31d9a7cf0c4e59b2f937732cd9e5c55+175&branch=main&qualified_name=refs%2Fheads%2Fmain)
+* [Updated local passport stratagy](https://github.com/ChicoState/PantryNode/commit/3b97252ac6a4067c295572286816177dbbb05b80)
+
+## Sprint 2
+
+* [Pair Programmed with other members of Backend Team](https://github.com/ChicoState/PantryNode/commit/2aa5f1b6047c63a33aa167130105abfdaedab395) 
+* [Implemented Git LFS](https://github.com/ChicoState/PantryNode/pull/80)
+
+## Sprint 3
+
+* [Containerized React ](https://github.com/ChicoState/PantryNode/pull/100)
 
 ## Notes
 
