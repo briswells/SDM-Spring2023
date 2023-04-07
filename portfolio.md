@@ -27,6 +27,15 @@ The highlights should include at least two different types of contributions (fro
 
 With a subsection for each sprint (i.e. `## Sprint 1`) during the semester, create a bullet-list below it that summarizes what you worked on. You can list activities that are incomplete/unresolved (e.g. work on a feature not yet submitted as a Pull Request) or dismissed (e.g. a bug logged but closed without need for resolution, or a Pull Request rejected). Provide a link in the repo to show evidence of your work when possible.
 
+## Sprint 1
+
+* Created schema for scalable database in 3NF
+* Created models for schema using sequelize
+* Containerized Postgres and PSadmin
+* Converted several of the previous routes to work with new DB
+* Updated local passport stratagy
+* Communicated between teams and performed code reviews
+
 ## Notes
 
 For reference to the original requirements for the MVP, see the [Original](docs/Original.pdf) and [Extension](docs/Extension.pdf) PDFs.
