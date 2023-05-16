@@ -1,31 +1,13 @@
 # Open Source maintenance portfolio
 
-The primary activity in the class is the maintenance of an open source. To showcase your contributions, you will set up an online portfolio of your work.
-
-Contributions in your portfolio may include:
-
-* Production code (and tests, accepted into main via Pull Request)
-* Developer Operations (integrated into main, via Pull Request)
-* Code review (via Pull Request feedback and decisions)
-* Bug logging and troubleshooting (via Issues)
-
-## Getting Started
-
-Create a repository or [set up a custom GitHub profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) with a `README.md` that contains two sections: **Highlights** and **Timeline**
-
 ### Highlights
 
-This is where you will showcase what you consider your most significant contributions. Create a list of 2-4 contributions you have made during the semester and for each one, provide:
-
-* A concise but descriptive title (e.g. "Added client management feature") that is a direct hyperlink to the contribution (e.g. Pull Request's URL, commit URL, etc.)
-* A sentence or two explaining your role, with acknowledgement of who else was directly involved in that specific activity (along with what they did collectively).
-* A plain-word explanation for how your contribution improves the product, as could be understood by even novice Software Engineers.
-
-The highlights should include at least two different types of contributions (from above), and at least one of which should be a direct, technical contribution of **Production Code** or **Developer Operations**.
+* **Setup Authentication between docker containers** [[1]](https://github.com/ChicoState/PantryNode/pull/180): Completed the intagrations between backend and frontend containers so they were both using the same JWT token method for authentication. This included updating the backend to set a token in local store when requested by the frontend, ensure the backend checked for expired tokens, and ensure the frontend authentication was setup to the token for authentication. [hardikpatil](https://github.com/hardikpatil) and [AbhinavReddy-Dev](https://github.com/AbhinavReddy-Dev) helped in an advisor role, but didn't commit any code.
+* **Designed Schema for new DB and created Sequelize models** [[1]](https://github.com/ChicoState/PantryNode/commit/0813c50a91f1f0e921bf322530025e953053d432) [[2]](https://github.com/ChicoState/PantryNode/commit/464b440f6ed984e8f89c26dd15744a176d31b304): Due to the database being moved from a document based DB to a relation DB a new schema was needed. A new DB was created for PostgresSQL and Sequelize models were implemented in tpyescript to avoiud direct SQL use within the app. [Mmurtey](https://github.com/ChicoState/PantryNode/commits?author=MMurtey) assisted in an advisory capacity but no code was commited.
 
 ### Timeline
 
-With a subsection for each sprint (i.e. `## Sprint 1`) during the semester, create a bullet-list below it that summarizes what you worked on. You can list activities that are incomplete/unresolved (e.g. work on a feature not yet submitted as a Pull Request) or dismissed (e.g. a bug logged but closed without need for resolution, or a Pull Request rejected). Provide a link in the repo to show evidence of your work when possible.
+Unless otherwise stated all code commits where merged into main.
 
 ## Sprint 1
 
@@ -33,17 +15,35 @@ With a subsection for each sprint (i.e. `## Sprint 1`) during the semester, crea
 * [Created models for schema using sequelize](https://github.com/ChicoState/PantryNode/commit/464b440f6ed984e8f89c26dd15744a176d31b304)
 * [Containerized Postgres and PSadmin](https://github.com/ChicoState/PantryNode/commit/cb5f892bd817c6bd290f497af3ea408396da99e4)
 * Converted several of the previous routes to work with new DB [1](https://github.com/ChicoState/PantryNode/commit/250c320d0e1fcb694962957b908e86e36b389ca4)  [2](https://github.com/ChicoState/PantryNode/commits/main?before=1ff8f3f3c31d9a7cf0c4e59b2f937732cd9e5c55+175&branch=main&qualified_name=refs%2Fheads%2Fmain)
-* [Updated local passport stratagy](https://github.com/ChicoState/PantryNode/commit/3b97252ac6a4067c295572286816177dbbb05b80)
+* [Updated local passport stratagy](https://github.com/ChicoState/PantryNode/commit/3b97252ac6a4067c295572286816177dbbb05b80) 
 
 ## Sprint 2
 
 * [Pair Programmed with other members of Backend Team](https://github.com/ChicoState/PantryNode/commit/2aa5f1b6047c63a33aa167130105abfdaedab395) 
-* [Implemented Git LFS](https://github.com/ChicoState/PantryNode/pull/80)
+* [Implemented Git LFS](https://github.com/ChicoState/PantryNode/pull/80) PR Opened
 
 ## Sprint 3
 
-* [Containerized React ](https://github.com/ChicoState/PantryNode/pull/100)
+* [Containerized React](https://github.com/ChicoState/PantryNode/pull/100)
+* [Fixed Docker Package Issues](https://github.com/ChicoState/PantryNode/pull/149)
+* [Created API route for feed](https://github.com/ChicoState/PantryNode/pull/153)
+* [Created API route for stock](https://github.com/ChicoState/PantryNode/pull/154)
+* [Allowed for hot app reloads on all systems](https://github.com/ChicoState/PantryNode/pull/158)
+* [Updated login route to return json](https://github.com/ChicoState/PantryNode/pull/164)
+* [Reviewed frontend updates PR](https://github.com/ChicoState/PantryNode/pull/140)
+
+## Sprint 4
+* [Fixed authentication stack between backend and frontend ](https://github.com/ChicoState/PantryNode/pull/180)
+* [Assisted in implenting barcode feature 1](https://github.com/ChicoState/PantryNode/commit/d650acf4c6bfbac1f13dcc8b6d3318ca30ac1fdc)
+* [Assisted in implenting barcode feature 2](https://github.com/ChicoState/PantryNode/commit/b93d5ff6672ab617c90751da39734c03bd5cc795)
+* [Removed unneeded files from main](https://github.com/ChicoState/PantryNode/pull/209)
+* [Reviewed PR for updating readme](https://github.com/ChicoState/PantryNode/pull/195)
+* [Reviewed Link SKU to DB feature](https://github.com/ChicoState/PantryNode/pull/176)
+* [Logged linter bug](https://github.com/ChicoState/PantryNode/issues/181)
+
+## Sprint 5
+* [Began working on single item lookup feature](https://github.com/ChicoState/PantryNode/tree/item-lookup) Unfinished Feature
 
 ## Notes
 
-For reference to the original requirements for the MVP, see the [Original](docs/Original.pdf) and [Extension](docs/Extension.pdf) PDFs.
+Generally assisted with communication between teams. Helped people get started on issues and answer questions over discord. 
